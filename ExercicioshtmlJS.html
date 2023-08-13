@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <title>JavaScript</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+
+    </head>
+    <body>
+        
+    
+    
+
+      <form action ="">
+
+        N1: <input type="text" id="n1" title="Primeiro número" placeholder="Insira o primeiro número"/><br>
+        N2: <input type="text" id="n2" title="Segundo número" placeholder="Insira o segundo número"/><br>
+
+        <input type="button" value="Somar" onclick="somar()">
+        <input type="button" value="Subtrair" onclick="subtrair()">
+        <input type="button" value="Multiplicar" onclick="multiplicar()">
+        <input type="button" value="Dividir" onclick="dividir()">
+
+        <h1 id="resultado">A soma dos números é </h1>
+        
+        </form>
+
+        <script>
+             function somar() {
+          const n1 = Number(document.getElementById('n1').value);
+          const n2 = Number(document.getElementById('n2').value);
+
+          const resultado = n1 + n2;
+
+          const resultadoElement = document.getElementById('resultado');
+          resultadoElement.innerHTML = "A soma é: " + resultado;
+        }
+
+            function subtrair() {
+                
+               const n1 = Number(document.getElementById('n1').value);
+          const n2 = Number(document.getElementById('n2').value);
+
+          const resultado = n1 - n2;
+
+                 const resultadoElement = document.getElementById('resultado');
+                 resultadoElement.innerHTML = "A subtração dos números é " + resultado;
+            }
+            function multiplicar() {
+                
+                const n1 = Number(document.getElementById('n1').value);
+                const n2 = Number(document.getElementById('n2').value);
+ 
+           const resultado = n1 * n2;
+ 
+                  const resultadoElement = document.getElementById('resultado');
+                  resultadoElement.innerHTML = "A multiplicação dos números é " + resultado;
+            } 
+
+            function dividir() {
+                
+                const n1 = Number(document.getElementById('n1').value);
+                const n2 = Number(document.getElementById('n2').value);
+ 
+           const resultado = n1 / n2;
+ 
+                  const resultadoElement = document.getElementById('resultado');
+                  resultadoElement.innerHTML = "A divisão é " + resultado;
+            } 
+        </script>
+        
+
+    </body>
+</html>
