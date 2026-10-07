@@ -2,6 +2,8 @@
 
 Uma calculadora web criada originalmente como exercício de aprendizagem em 2023 e reorganizada nesta versão com interface responsiva, módulos JavaScript e testes.
 
+[**Experimentar a calculadora →**](https://luizchockt.github.io/CalculadoraAprendizadoJS/)
+
 ![Interface da calculadora](./assets/screenshot.png)
 
 ## O que faz
