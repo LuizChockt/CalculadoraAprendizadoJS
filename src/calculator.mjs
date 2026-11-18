@@ -4,7 +4,11 @@ export function calculate(expression) {
     throw new Error('Digite uma operação.');
   }
   if (expression.length > 160) throw new Error('Use uma expressão de até 160 caracteres.');
-  const source = expression.replaceAll(',', '.');
+  const source = expression
+    .replaceAll(',', '.')
+    .replaceAll('−', '-')
+    .replaceAll('×', '*')
+    .replaceAll('÷', '/');
   let position = 0;
   const skipSpaces = () => { while (/\s/.test(source[position] ?? '') && position < source.length) position++; };
   const peek = () => { skipSpaces(); return source[position]; };

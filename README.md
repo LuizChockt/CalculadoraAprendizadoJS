@@ -10,6 +10,7 @@ Uma calculadora web criada originalmente como exercício de aprendizagem em 2023
 
 - Soma, subtração, multiplicação e divisão com precedência de operações.
 - Parênteses, sinais negativos e decimais com ponto ou vírgula.
+- Expressões coladas com `×`, `÷` e `−`, como `6 × (2 − 1)`.
 - Entrada por teclado e botões; Enter no campo calcula e Esc limpa.
 - Histórico das cinco últimas operações durante a sessão.
 - Feedback para expressões inválidas e divisão por zero.

@@ -13,6 +13,10 @@ test('accepts decimal point, decimal comma and unary signs', () => {
   assert.equal(calculate('5 - -2'), 7);
   assert.equal(calculate('-0'), 0);
 });
+test('accepts the operators shown on the keypad in pasted expressions', () => {
+  assert.equal(calculate('−(6 × 2) ÷ 3'), -4);
+  assert.equal(calculate('9 − 1,5 × 2'), 6);
+});
 test('reports malformed expressions and division by zero', () => {
   for (const input of ['', ' ', '2 +', '1..2', '()', '(1 + 2', '1 2', '2(3)', '0 / 0', '5 / 0']) {
     assert.throws(() => calculate(input), Error, input);
