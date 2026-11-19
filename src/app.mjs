@@ -72,7 +72,7 @@ document.addEventListener('keydown', (event) => {
   if (event.ctrlKey || event.metaKey || event.altKey) return;
   if (event.key === 'Escape') { event.preventDefault(); reset(); return; }
   if (event.target === input) return;
-  if (/^[\d.,()+\-*/]$/.test(event.key)) { event.preventDefault(); append(event.key); }
+  if (/^[\d.,()+\-*/−×÷]$/.test(event.key)) { event.preventDefault(); append(event.key); }
   if (event.key === '=') { event.preventDefault(); evaluate(); }
 });
 document.querySelector('#copy').addEventListener('click', async () => {
